@@ -2,8 +2,12 @@ const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 
 // const url = "mongodb://localhost:27017";
-const url = "mongodb://127.0.0.1:27017";
+// const url = "mongodb://127.0.0.1:27017";
 // const url = "mongodb+srv://admin:V90K7ehx2krw7OlM@cluster0.gbnr4oi.mongodb.net";
+
+// acesso: banco de dados na nuvem criado por nós no curso
+const url = "mongodb+srv://admin:xUT5ouF3931hYub9@cluster0.xafo1pr.mongodb.net";
+
 const dbName = "jornada-backend-agosto-23";
 const client = new MongoClient(url);
 
