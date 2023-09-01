@@ -8,6 +8,9 @@ const { MongoClient, ObjectId } = require("mongodb");
 // acesso: banco de dados na nuvem criado por nós no curso
 const url = "mongodb+srv://admin:xUT5ouF3931hYub9@cluster0.xafo1pr.mongodb.net";
 
+//banco do professor
+//mongodb+srv://admin:v8h7sjoNkQixeoNz@cluster0.xsfw5tb.mongodb.net
+
 const dbName = "jornada-backend-agosto-23";
 const client = new MongoClient(url);
 
@@ -97,7 +100,8 @@ async function main() {
     res.status(204).send();
   });
 
-  app.listen(3000);
+  
+  app.listen(process.env.PORT || 3000);
 }
 
 main();
